@@ -18,12 +18,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -37,8 +37,8 @@
     <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
 
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
@@ -63,6 +63,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'Tugas4';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="UTS" href="UTS.html" />
     <link rel="prev" title="Tugas 3 - Crawling Data Berita Online" href="Tugas3.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -159,6 +160,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="Tugas2.html">Tugas 2 - Crawling Data PTA Trunojoyo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Tugas3.html">Tugas 3 - Crawling Data Berita Online</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>Tugas Pipelines</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="UTS.html">UTS</a></li>
+
+
+
 </ul>
 
     </div>
@@ -513,12 +518,10 @@ Requirement already satisfied: psycopg2 in /usr/local/lib/python3.9/dist-package
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting mysqlclient
+Collecting mysqlclient
   Downloading mysqlclient-2.1.1.tar.gz (88 kB)
 ?25l     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.0/88.1 KB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">88.1/88.1 KB</span> <span class=" -Color -Color-Red">5.1 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">88.1/88.1 KB</span> <span class=" -Color -Color-Red">4.1 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
 ?25h
 </pre></div>
 </div>
@@ -527,15 +530,13 @@ Building wheels for collected packages: mysqlclient
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Building wheel for mysqlclient (setup.py) ... ?25l?25hdone
-  Created wheel for mysqlclient: filename=mysqlclient-2.1.1-cp39-cp39-linux_x86_64.whl size=107579 sha256=c6895c1816ae3ef72dfbbbb45dc76f4eb44fa9ba2a45bd8c9713331d15d3b9d7
+  Created wheel for mysqlclient: filename=mysqlclient-2.1.1-cp39-cp39-linux_x86_64.whl size=107568 sha256=cd9a1e97ec9bc524e23e2c945ec95322a8f9574ad93b7bb209d1d3bfe3954275
   Stored in directory: /root/.cache/pip/wheels/f3/a5/27/c6312d8008951cfd5511684378a9e057b82006c70e1fea6107
 Successfully built mysqlclient
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Installing collected packages: mysqlclient
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Successfully installed mysqlclient-2.1.1
+Successfully installed mysqlclient-2.1.1
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
@@ -544,26 +545,18 @@ Successfully built mysqlclient
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting mysql-connector-python
   Downloading mysql_connector_python-8.0.32-cp39-cp39-manylinux1_x86_64.whl (23.5 MB)
 ?25l     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.0/23.5 MB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
-     ━╺━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.6/23.5 MB</span> <span class=" -Color -Color-Red">21.4 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:02</span>
-     ━━━━━━╺━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">3.6/23.5 MB</span> <span class=" -Color -Color-Red">52.3 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+     ╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.4/23.5 MB</span> <span class=" -Color -Color-Red">13.1 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:02</span>
+     ━━━━━╺━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">3.2/23.5 MB</span> <span class=" -Color -Color-Red">46.7 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+     ━━━━━━━━━━━━━━━╺━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">9.0/23.5 MB</span> <span class=" -Color -Color-Red">84.7 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+     ━━━━━━━━━━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">15.1/23.5 MB</span> <span class=" -Color -Color-Red">174.0 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">6.9/23.5 MB</span> <span class=" -Color -Color-Red">63.0 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
-     ━━━━━━━━━━━━━━━━━╺━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">10.3/23.5 MB</span> <span class=" -Color -Color-Red">69.1 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
-     ━━━━━━━━━━━━━━━━━━━━━━━━╺━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">14.3/23.5 MB</span> <span class=" -Color -Color-Red">90.7 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸━━━━━━━━ <span class=" -Color -Color-Green">18.4/23.5 MB</span> <span class=" -Color -Color-Red">102.5 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸━━ <span class=" -Color -Color-Green">22.2/23.5 MB</span> <span class=" -Color -Color-Red">107.4 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸ <span class=" -Color -Color-Green">23.5/23.5 MB</span> <span class=" -Color -Color-Red">104.3 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸ <span class=" -Color -Color-Green">23.5/23.5 MB</span> <span class=" -Color -Color-Red">104.3 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸ <span class=" -Color -Color-Green">23.5/23.5 MB</span> <span class=" -Color -Color-Red">104.3 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸ <span class=" -Color -Color-Green">23.5/23.5 MB</span> <span class=" -Color -Color-Red">104.3 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">23.5/23.5 MB</span> <span class=" -Color -Color-Red">41.0 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
-?25h
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: protobuf&lt;=3.20.3,&gt;=3.11.0 in /usr/local/lib/python3.9/dist-packages (from mysql-connector-python) (3.19.6)
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╺━━━━ <span class=" -Color -Color-Green">20.7/23.5 MB</span> <span class=" -Color -Color-Red">165.2 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸ <span class=" -Color -Color-Green">23.5/23.5 MB</span> <span class=" -Color -Color-Red">161.2 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸ <span class=" -Color -Color-Green">23.5/23.5 MB</span> <span class=" -Color -Color-Red">161.2 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸ <span class=" -Color -Color-Green">23.5/23.5 MB</span> <span class=" -Color -Color-Red">161.2 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">23.5/23.5 MB</span> <span class=" -Color -Color-Red">60.4 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+?25hRequirement already satisfied: protobuf&lt;=3.20.3,&gt;=3.11.0 in /usr/local/lib/python3.9/dist-packages (from mysql-connector-python) (3.20.3)
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Installing collected packages: mysql-connector-python
@@ -576,14 +569,14 @@ Successfully built mysqlclient
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting pymysql
-  Downloading PyMySQL-1.0.2-py3-none-any.whl (43 kB)
-?25l     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.0/43.8 KB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">43.8/43.8 KB</span> <span class=" -Color -Color-Red">4.3 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+  Downloading PyMySQL-1.0.3-py3-none-any.whl (43 kB)
+?25l     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.0/43.7 KB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">43.7/43.7 KB</span> <span class=" -Color -Color-Red">2.7 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
 ?25h
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Installing collected packages: pymysql
-Successfully installed pymysql-1.0.2
+Successfully installed pymysql-1.0.3
 </pre></div>
 </div>
 </div>
@@ -597,27 +590,56 @@ Successfully installed pymysql-1.0.2
 <span class="n">cur</span> <span class="o">=</span> <span class="n">mydb</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
 <span class="n">cur</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;SELECT * FROM iris&quot;</span><span class="p">)</span>
 <span class="n">data</span> <span class="o">=</span> <span class="n">cur</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
-<span class="n">column_names</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;id&quot;</span><span class="p">,</span><span class="s2">&quot;petal_l&quot;</span><span class="p">]</span>
+<span class="n">column_names</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;id&quot;</span><span class="p">,</span><span class="s2">&quot;petallength&quot;</span><span class="p">]</span>
 <span class="n">df_mysql</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">column_names</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">df_mysql</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>      id petal_l
-0      1     1.4
-1      2     1.4
-2      3     1.3
-3      4     1.5
-4      5     1.4
-..   ...     ...
-145  146     5.2
-146  147     5.0
-147  148     5.2
-148  149     5.4
-149  150     5.1
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="ne">gaierror</span>Traceback (most recent call last)
+<span class="nn">/usr/local/lib/python3.9/dist-packages/pymysql/connections.py</span> in <span class="ni">connect</span><span class="nt">(self, sock)</span>
+<span class="g g-Whitespace">    </span><span class="mi">615</span>                         <span class="k">try</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">616</span>                             <span class="n">sock</span> <span class="o">=</span> <span class="n">socket</span><span class="o">.</span><span class="n">create_connection</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">617</span>                                 <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">host</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">port</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">connect_timeout</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span>
 
-[150 rows x 2 columns]
+<span class="nn">/usr/lib/python3.9/socket.py</span> in <span class="ni">create_connection</span><span class="nt">(address, timeout, source_address)</span>
+<span class="g g-Whitespace">    </span><span class="mi">822</span>     <span class="n">err</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="ne">--&gt; </span><span class="mi">823</span>     <span class="k">for</span> <span class="n">res</span> <span class="ow">in</span> <span class="n">getaddrinfo</span><span class="p">(</span><span class="n">host</span><span class="p">,</span> <span class="n">port</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">SOCK_STREAM</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">824</span>         <span class="n">af</span><span class="p">,</span> <span class="n">socktype</span><span class="p">,</span> <span class="n">proto</span><span class="p">,</span> <span class="n">canonname</span><span class="p">,</span> <span class="n">sa</span> <span class="o">=</span> <span class="n">res</span>
+
+<span class="nn">/usr/lib/python3.9/socket.py</span> in <span class="ni">getaddrinfo</span><span class="nt">(host, port, family, type, proto, flags)</span>
+<span class="g g-Whitespace">    </span><span class="mi">953</span>     <span class="n">addrlist</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="ne">--&gt; </span><span class="mi">954</span>     <span class="k">for</span> <span class="n">res</span> <span class="ow">in</span> <span class="n">_socket</span><span class="o">.</span><span class="n">getaddrinfo</span><span class="p">(</span><span class="n">host</span><span class="p">,</span> <span class="n">port</span><span class="p">,</span> <span class="n">family</span><span class="p">,</span> <span class="nb">type</span><span class="p">,</span> <span class="n">proto</span><span class="p">,</span> <span class="n">flags</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">955</span>         <span class="n">af</span><span class="p">,</span> <span class="n">socktype</span><span class="p">,</span> <span class="n">proto</span><span class="p">,</span> <span class="n">canonname</span><span class="p">,</span> <span class="n">sa</span> <span class="o">=</span> <span class="n">res</span>
+
+<span class="ne">gaierror</span>: [Errno -2] Name or service not known
+
+<span class="n">During</span> <span class="n">handling</span> <span class="n">of</span> <span class="n">the</span> <span class="n">above</span> <span class="n">exception</span><span class="p">,</span> <span class="n">another</span> <span class="n">exception</span> <span class="n">occurred</span><span class="p">:</span>
+
+<span class="ne">OperationalError</span>Traceback (most recent call last)
+<span class="nn">&lt;ipython-input-4-7aef0886f83a&gt;</span> in <span class="ni">&lt;cell line: 3&gt;</span><span class="nt">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">import</span> <span class="nn">pymysql</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="ne">----&gt; </span><span class="mi">3</span> <span class="n">mydb</span> <span class="o">=</span> <span class="n">pymysql</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span>   <span class="n">db</span><span class="o">=</span><span class="s2">&quot;petallength&quot;</span><span class="p">,</span> <span class="n">user</span><span class="o">=</span><span class="s2">&quot;admin&quot;</span><span class="p">,</span><span class="n">passwd</span><span class="o">=</span><span class="s2">&quot;DIPptUbD&quot;</span><span class="p">,</span><span class="n">host</span><span class="o">=</span><span class="s2">&quot;mysql-115556-0.cloudclusters.net&quot;</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">16459</span><span class="p">,</span><span class="n">autocommit</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">cur</span> <span class="o">=</span> <span class="n">mydb</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+
+<span class="nn">/usr/local/lib/python3.9/dist-packages/pymysql/connections.py</span> in <span class="ni">__init__</span><span class="nt">(self, user, password, host, database, unix_socket, port, charset, sql_mode, read_default_file, conv, use_unicode, client_flag, cursorclass, init_command, connect_timeout, read_default_group, autocommit, local_infile, max_allowed_packet, defer_connect, auth_plugin_map, read_timeout, write_timeout, bind_address, binary_prefix, program_name, server_public_key, ssl, ssl_ca, ssl_cert, ssl_disabled, ssl_key, ssl_verify_cert, ssl_verify_identity, compress, named_pipe, passwd, db)</span>
+<span class="g g-Whitespace">    </span><span class="mi">350</span>             <span class="bp">self</span><span class="o">.</span><span class="n">_sock</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="g g-Whitespace">    </span><span class="mi">351</span>         <span class="k">else</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">352</span>             <span class="bp">self</span><span class="o">.</span><span class="n">connect</span><span class="p">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">353</span> 
+<span class="g g-Whitespace">    </span><span class="mi">354</span>     <span class="k">def</span> <span class="fm">__enter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+
+<span class="nn">/usr/local/lib/python3.9/dist-packages/pymysql/connections.py</span> in <span class="ni">connect</span><span class="nt">(self, sock)</span>
+<span class="g g-Whitespace">    </span><span class="mi">666</span>                 <span class="k">if</span> <span class="n">DEBUG</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">667</span>                     <span class="nb">print</span><span class="p">(</span><span class="n">exc</span><span class="o">.</span><span class="n">traceback</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">668</span>                 <span class="k">raise</span> <span class="n">exc</span>
+<span class="g g-Whitespace">    </span><span class="mi">669</span> 
+<span class="g g-Whitespace">    </span><span class="mi">670</span>             <span class="c1"># If e is neither DatabaseError or IOError, It&#39;s a bug.</span>
+
+<span class="ne">OperationalError</span>: (2003, &quot;Can&#39;t connect to MySQL server on &#39;mysql-115556-0.cloudclusters.net&#39; ([Errno -2] Name or service not known)&quot;)
 </pre></div>
 </div>
 </div>
@@ -633,21 +655,11 @@ Successfully installed pymysql-1.0.2
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting pymssql
+Collecting pymssql
   Downloading pymssql-2.2.7-cp39-cp39-manylinux_2_24_x86_64.whl (3.2 MB)
-?25l     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.0/3.2 MB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
-     ━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.6/3.2 MB</span> <span class=" -Color -Color-Red">19.2 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸ <span class=" -Color -Color-Green">3.2/3.2 MB</span> <span class=" -Color -Color-Red">47.5 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">3.2/3.2 MB</span> <span class=" -Color -Color-Red">36.4 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
-?25h
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Installing collected packages: pymssql
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Successfully installed pymssql-2.2.7
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">3.2/3.2 MB</span> <span class=" -Color -Color-Red">29.8 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+?25hInstalling collected packages: pymssql
+Successfully installed pymssql-2.2.7
 </pre></div>
 </div>
 </div>
@@ -761,7 +773,7 @@ Successfully installed pymysql-1.0.2
 <span class="c1"># Connect to the database</span>
 <span class="n">conn</span> <span class="o">=</span> <span class="n">connect</span><span class="p">(</span><span class="n">param_dic</span><span class="p">)</span>
 
-<span class="n">column_names</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;id&quot;</span><span class="p">,</span><span class="s2">&quot;sepal_l&quot;</span><span class="p">]</span>
+<span class="n">column_names</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;id&quot;</span><span class="p">,</span><span class="s2">&quot;sepallength_&quot;</span><span class="p">]</span>
 
 <span class="n">df_post_local</span> <span class="o">=</span> <span class="n">postgresql_to_dataframe</span><span class="p">(</span><span class="n">conn</span><span class="p">,</span> <span class="s2">&quot;select * from iris&quot;</span><span class="p">,</span> <span class="n">column_names</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">df_post_local</span><span class="p">)</span>
@@ -770,23 +782,19 @@ Successfully installed pymysql-1.0.2
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Connecting to the PostgreSQL database...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Connection successful
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>      id sepal_l
-0      1     5.1
-1      2     4.9
-2      3     4.7
-3      4     4.6
-4      5     5.0
-..   ...     ...
-145  146     6.7
-146  147     6.3
-147  148     6.5
-148  149     6.2
-149  150     5.9
+Connection successful
+      id sepallength_
+0      1          5.1
+1      2          4.9
+2      3          4.7
+3      4          4.6
+4      5          5.0
+..   ...          ...
+145  146          6.7
+146  147          6.3
+147  148          6.5
+148  149          6.2
+149  150          5.9
 
 [150 rows x 2 columns]
 </pre></div>
@@ -807,7 +815,7 @@ Successfully installed pymysql-1.0.2
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-add35610-6c47-4cb0-808a-bca95e90185a">
+  <div id="df-cf665d8b-34c9-47cf-b67f-a8f53a3f8269">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -828,11 +836,11 @@ Successfully installed pymysql-1.0.2
     <tr style="text-align: right;">
       <th></th>
       <th>id</th>
-      <th>sepal_l</th>
+      <th>sepallength_</th>
       <th>id</th>
       <th>sepalwidh</th>
       <th>id</th>
-      <th>petal_l</th>
+      <th>petallength</th>
       <th>id</th>
       <th>petalwidth</th>
       <th>class</th>
@@ -975,7 +983,7 @@ Successfully installed pymysql-1.0.2
 </table>
 <p>150 rows × 9 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-add35610-6c47-4cb0-808a-bca95e90185a')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-cf665d8b-34c9-47cf-b67f-a8f53a3f8269')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -1026,12 +1034,12 @@ Successfully installed pymysql-1.0.2
 
       <script>
         const buttonEl =
-          document.querySelector('#df-add35610-6c47-4cb0-808a-bca95e90185a button.colab-df-convert');
+          document.querySelector('#df-cf665d8b-34c9-47cf-b67f-a8f53a3f8269 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-add35610-6c47-4cb0-808a-bca95e90185a');
+          const element = document.querySelector('#df-cf665d8b-34c9-47cf-b67f-a8f53a3f8269');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1064,7 +1072,7 @@ Successfully installed pymysql-1.0.2
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-d2b96587-305e-4c6f-9d93-22a580969f18">
+  <div id="df-e124d247-c959-4025-81d6-2092e5ba88b8">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1084,9 +1092,9 @@ Successfully installed pymysql-1.0.2
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>sepal_l</th>
+      <th>sepallength_</th>
       <th>sepalwidh</th>
-      <th>petal_l</th>
+      <th>petallength</th>
       <th>petalwidth</th>
       <th>class</th>
     </tr>
@@ -1184,7 +1192,7 @@ Successfully installed pymysql-1.0.2
 </table>
 <p>150 rows × 5 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-d2b96587-305e-4c6f-9d93-22a580969f18')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-e124d247-c959-4025-81d6-2092e5ba88b8')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -1235,12 +1243,12 @@ Successfully installed pymysql-1.0.2
 
       <script>
         const buttonEl =
-          document.querySelector('#df-d2b96587-305e-4c6f-9d93-22a580969f18 button.colab-df-convert');
+          document.querySelector('#df-e124d247-c959-4025-81d6-2092e5ba88b8 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-d2b96587-305e-4c6f-9d93-22a580969f18');
+          const element = document.querySelector('#df-e124d247-c959-4025-81d6-2092e5ba88b8');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1660,7 +1668,10 @@ data test sebesar 20%</p>
               
               
                 <footer class="bd-footer-article">
-                  <!-- Previous / next buttons -->
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="Tugas3.html"
@@ -1671,7 +1682,19 @@ data test sebesar 20%</p>
         <p class="prev-next-title">Tugas 3 - Crawling Data Berita Online</p>
       </div>
     </a>
+    <a class="right-next"
+       href="UTS.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">UTS</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
 </div>
+
                 </footer>
               
             </div>
@@ -1704,7 +1727,7 @@ data test sebesar 20%</p>
             
           </div>
           <footer class="bd-footer-content">
-            <div class="bd-footer-content__inner">
+            
 <div class="bd-footer-content__inner container">
   
   <div class="footer-item">
@@ -1734,7 +1757,7 @@ By Rania Nuraini
     
   </div>
   
-</div></div>
+</div>
           </footer>
         
 
@@ -1743,8 +1766,8 @@ By Rania Nuraini
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d"></script>
+  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
 
   <footer class="bd-footer">
   </footer>
